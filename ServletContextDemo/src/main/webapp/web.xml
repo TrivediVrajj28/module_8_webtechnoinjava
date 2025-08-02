@@ -1,0 +1,29 @@
+<web-app xmlns="http://jakarta.ee/xml/ns/jakartaee" version="5.0">
+
+  <!-- Shared parameter -->
+  <context-param>
+    <param-name>institute</param-name>
+    <param-value>Silver Oak University</param-value>
+  </context-param>
+
+  <!-- Servlet A -->
+  <servlet>
+    <servlet-name>servletA</servlet-name>
+    <servlet-class>com.example.ServletA</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletA</servlet-name>
+    <url-pattern>/a</url-pattern>
+  </servlet-mapping>
+
+  <!-- Servlet B -->
+  <servlet>
+    <servlet-name>servletB</servlet-name>
+    <servlet-class>com.example.ServletB</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletB</servlet-name>
+    <url-pattern>/b</url-pattern>
+  </servlet-mapping>
+
+</web-app>

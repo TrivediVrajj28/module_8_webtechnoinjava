@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navigation Menu & Pseudo-classes</title>
+  <style>
+    /* Basic page styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    /* Navigation bar */
+    nav {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      padding: 8px 16px;
+      display: inline-block;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Hover effect */
+    nav a:hover {
+      background-color: #ff9800;
+      color: black;
+    }
+
+    /* Form styling */
+    form {
+      margin-top: 30px;
+      background-color: white;
+      padding: 20px;
+      width: 300px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px gray;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+
+    /* Focus effect */
+    input:focus {
+      border-color: #4CAF50;
+      outline: none;
+      background-color: #e8f5e9;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Navigation Menu & Form with Pseudo-classes</h2>
+
+  <!-- Navigation menu -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- Sample form -->
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email">
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<web-app xmlns="http://jakarta.ee/xml/ns/jakartaee" version="5.0">
+
+  <servlet>
+    <servlet-name>genServlet</servlet-name>
+    <servlet-class>com.example.MyGenericServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>genServlet</servlet-name>
+    <url-pattern>/generic</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>httpServlet</servlet-name>
+    <servlet-class>com.example.MyHttpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>httpServlet</servlet-name>
+    <url-pattern>/http</url-pattern>
+  </servlet-mapping>
+
+</web-app>

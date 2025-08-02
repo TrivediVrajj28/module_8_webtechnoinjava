@@ -1,0 +1,21 @@
+<web-app xmlns="http://jakarta.ee/xml/ns/jakartaee" version="5.0">
+
+  <servlet>
+    <servlet-name>configServlet</servlet-name>
+    <servlet-class>com.example.ConfigServlet</servlet-class>
+    <init-param>
+      <param-name>developer</param-name>
+      <param-value>Vraj Trivedi</param-value>
+    </init-param>
+    <init-param>
+      <param-name>project</param-name>
+      <param-value>LoginApp</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>configServlet</servlet-name>
+    <url-pattern>/showConfig</url-pattern>
+  </servlet-mapping>
+
+</web-app>

@@ -1,0 +1,14 @@
+<web-app xmlns="http://jakarta.ee/xml/ns/jakartaee"
+         version="5.0">
+
+  <servlet>
+    <servlet-name>welcomeServlet</servlet-name>
+    <servlet-class>com.example.WelcomeServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>welcomeServlet</servlet-name>
+    <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+
+</web-app>
